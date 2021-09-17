@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Add Post | CodingNepal</title>
+    <script>
+        function handleSubmit ()
+            {
+            const farmName = document.getElementById('frName').value
+            const productName=  document.getElementById('pName').value
+            const productPrice=  document.getElementById('pPrice').value
+            const productImg=  document.getElementById('imgSource').value
+            
+            localStorage.setItem("farmNameOut",farmName);
+            localStorage.setItem("productNameOut",productName);
+            localStorage.setItem("productPriceOut",productPrice);
+            localStorage.setItem("productImgOut",productImg);
+            
+            return ;
+            }
+            </script>
+    <link rel="stylesheet" href="css/style5.css">
+</head>
+
+<body>
+    <div class="center">
+        <h1>Add Post</h1>
+        <form  method="POST" action="MarketPlace.html" >
+            <div class="txt_field">
+                <input type="text"  id="pName">
+                <span></span>
+                <label>Product Name</label>
+            </div>
+            <div class="txt_field">
+                <input type="text"  id="frName">
+                <span></span>
+                <label>Farm Name</label>
+            </div>
+            <div class="txt_field">
+                <input type="text"  id="pPrice" >
+                <span></span>
+                <label>Product Price (TK)</label>
+            </div> 
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Image Upload</label>
+                </div>
+                <div class="col-75"> 
+                    <input type="file" id="imgSource" name="filename">
+                </div>
+            </div>
+            <button class="submitButton" type="submit" onclick="handleSubmit()">Post</button>
+        </form>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Century Gothic;
+}
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../picture.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 25 px;
+}
+
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: rgb(23, 184, 84);
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6 ease;
+    font-weight: bold;
+}
+
+ul li a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+ul li.active a{
+    background-color: #fff;
+    color: #000; 
+}
+
+.logo img{
+    float: left;
+    width: 100px;
+    height: auto;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
+    position: relative;
+}
+.container{
+    height: 75vh;
+    width: 50%;
+    background: rgb(20,20,20,0.6);
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    padding:0,20px;
+}
+.container h1{
+    color:rgb(207,241,241);
+    margin-top: 50px;
+}
+
+.main{
+    max-width: 1300px;
+    margin: auto;
+}
+
+.container p{
+    color: white;
+    margin-top: 60px;
+    font-size: small;
+    font-style: normal;
+    text-align: justify;
+    padding-left: 5%;
+    padding-right: 5%;
+   
+}
+.btn{
+    display: inline-block;
+    background: linear-gradient(45deg,rgb(5, 5, 117),rgb(199, 104, 120));
+    border-radius: 6px;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+    box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
+}
